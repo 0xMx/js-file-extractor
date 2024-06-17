@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS File Extractor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 14px;
+      margin-top: 0;
+      color: #555;
+    }
+    button {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-bottom: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>JS File Extractor</h1>
+  <h2>By: Meshari Almalki</h2>
+  <button id="copyButton">Copy All URLs</button>
+  <button id="deleteButton">Delete Output</button>
+  <table>
+    <thead>
+      <tr>
+        <th>JavaScript File</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody id="fileList"></tbody>
+  </table>
+  <script src="popup.js"></script>
+</body>
+</html>

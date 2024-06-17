@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "JS File Extractor",
+    "version": "1.0",
+    "description": "Extract and list all JavaScript file URLs from the current page.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage",
+      "tabs"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "author": "Meshari Almalki",
+    "homepage_url": "https://x.com/slv0d"
+  }
+  
